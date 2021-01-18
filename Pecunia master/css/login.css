@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  line-height: 1.6;
+  background-color: #ddd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  gap: 0;
+}
+
+.login h1 {
+  float: left;
+  font-size: 80px;
+  color: teal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.login .textbox {
+  font-size: 30px;
+  border-bottom: 1px solid teal;
+}
+
+.login .textbox ::-webkit-input-placeholder {
+  width: 100%;
+}
+
+.login .textbox :-ms-input-placeholder {
+  width: 100%;
+}
+
+.login .textbox ::-ms-input-placeholder {
+  width: 100%;
+}
+
+.login .textbox ::placeholder {
+  width: 100%;
+}
+
+.login .textbox i {
+  width: 26px;
+  float: center;
+  text-align: center;
+}
+
+.login .textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 30px;
+  margin: 1.5rem 0;
+}
+
+.login form {
+  width: calc(70vw/1.1618);
+}
+
+.login form .button {
+  padding: .5rem;
+  margin: .5rem 0;
+  border: 1px solid teal;
+  background: teal;
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.login form .error {
+  background: white;
+  color: brown;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=login.css.map */

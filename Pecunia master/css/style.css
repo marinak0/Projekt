@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  line-height: 1.6;
+  background-color: #ddd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background: #171717;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+nav .default__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .default__nav .links :nth-child(5) {
+  font-weight: bold;
+}
+
+nav .default__nav .links a {
+  font-size: 22px;
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+nav .default__nav .links a:hover {
+  color: tan;
+}
+
+.landing {
+  min-height: calc(100vh / 1.1618);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/money-3481699_1920.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/money-3481699_1920.jpg) no-repeat center center/cover;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.landing .landing__text {
+  color: #ddd;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.landing .landing__text h1 {
+  font-size: 80px;
+  text-shadow: 0 0 10px #171717;
+}
+
+.landing .landing__text h2 {
+  font-size: 20px;
+  text-shadow: 0 0 10px #171717;
+}
+
+.about__us {
+  width: 100%;
+  min-height: calc(100vh / 1.1618);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.about__us .about__us__text {
+  width: calc(70% / 1.1618);
+}
+
+.about__us .about__us__text h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.about__us .about__us__text p {
+  font-size: 25px;
+}
+
+.tecajna__lista {
+  width: 100%;
+  min-height: 100vh;
+  background: tan;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#records__table {
+  -webkit-box-shadow: 0 0 10px #171717;
+          box-shadow: 0 0 10px #171717;
+}
+
+#records__table .heading {
+  background: teal;
+  color: #ddd;
+}
+
+#records__table td {
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#records__table tr {
+  background: #a0b9b1;
+  color: #444;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#records__table th {
+  padding: 0.5rem;
+}
+
+.converter {
+  min-height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.converter h2 {
+  color: teal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.converter .converter__holder {
+  width: 100%;
+  min-height: 450px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.converter .converter__holder form {
+  width: calc(100% / 1.1618);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.converter .converter__holder form p {
+  font-size: 30px;
+}
+
+.converter .converter__holder form #iznosOtkup,
+.converter .converter__holder form #iznosProdaja {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid teal;
+  width: 300px;
+  font-size: 24px;
+}
+
+.converter .converter__holder form #iznosOtkup::-webkit-input-placeholder,
+.converter .converter__holder form #iznosProdaja::-webkit-input-placeholder {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.converter .converter__holder form #iznosOtkup:-ms-input-placeholder,
+.converter .converter__holder form #iznosProdaja:-ms-input-placeholder {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.converter .converter__holder form #iznosOtkup::-ms-input-placeholder,
+.converter .converter__holder form #iznosProdaja::-ms-input-placeholder {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.converter .converter__holder form #iznosOtkup::placeholder,
+.converter .converter__holder form #iznosProdaja::placeholder {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.converter .converter__holder form #valuteOtkup,
+.converter .converter__holder form #valuteProdaja {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+}
+
+.converter .converter__holder form #uKune {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+}
+
+.converter .converter__holder form .izracunajProdaja,
+.converter .converter__holder form .izracunajOtkup {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px #171717;
+          box-shadow: 0 0 10px #171717;
+  background: teal;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.converter .converter__holder form .izracunajProdaja:active,
+.converter .converter__holder form .izracunajOtkup:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.converter .converter__holder form .izracunOtkup,
+.converter .converter__holder form .izracunProdaja {
+  border: solid teal;
+  padding: 0.5rem;
+  width: 250px;
+}
+
+.contact__form {
+  width: 100%;
+  min-height: 100vh;
+  background: tan;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact__form .contactFormHeading {
+  color: teal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+}
+
+.contact__form .nasaForma {
+  width: calc(70% / 1.1618);
+  margin: 0 auto;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+
+.contact__form .nasaForma input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2.5px solid teal;
+  background: transparent;
+  font-size: 24px;
+  margin: 0.5rem auto;
+  text-align: left;
+}
+
+.contact__form .nasaForma textarea {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2.5px solid teal;
+  background: transparent;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact__form .nasaForma input[type="submit"] {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px #171717;
+          box-shadow: 0 0 10px #171717;
+  background: teal;
+  color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin: 5vh 0;
+}
+
+.contact__form .nasaForma input[type="submit"]:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  width: 100%;
+  min-height: 350px;
+  background: #171717;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer .mapHolder {
+  background: url(/assets/pecuniaLocation.PNG) no-repeat center center/cover;
+}
+
+footer .contactNumbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-items: center;
+  color: #ddd;
+  font-size: 22px;
+  text-align: center;
+}
+
+footer .ikone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 200px;
+}
+
+footer .ikone div {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: solid teal;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
