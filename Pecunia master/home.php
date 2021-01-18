@@ -7,6 +7,7 @@ if(isset($_POST['but_logout'])){
     header('Location: login.php');
 }
 ?>
+//php ne radi
 <? 
 if(isset($_POST['tecajevi_botun'])){
     $valuta = mysqli_real_escape_string($conn,$_POST['valuta']);
